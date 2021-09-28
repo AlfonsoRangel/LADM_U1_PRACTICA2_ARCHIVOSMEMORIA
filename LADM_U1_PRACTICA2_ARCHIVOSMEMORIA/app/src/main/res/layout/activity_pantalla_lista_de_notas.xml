@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".pantalla_listaDeNotas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="40dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/boton_agregarNota"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_agregar"
+                app:tint="@color/azul_ligero"
+                android:background="@drawable/efecto_ripple"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notas"
+                android:textStyle="bold"
+                android:textColor="@color/blanco_ligero"
+                android:textSize="40sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/boton_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_info"
+                app:tint="@color/azul_ligero"
+                android:background="@drawable/efecto_ripple"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- NOTA ROJA
+            <LinearLayout
+                style="@style/contenedor_nota"
+                android:backgroundTint="@color/nota_roja">
+
+                <LinearLayout
+                    style="@style/contenedor_nota_lateral">
+
+                    <TextView
+                        style="@style/txt_numero_nota"
+                        android:text="1"
+                        android:backgroundTint="@color/nota_rojaNum"/>
+
+                    <ImageView
+                        style="@style/img_tipo_memoria"
+                        android:id="@+id/boton_tipoMemoria1"
+                        android:src="@drawable/icono_telefono"
+                        app:tint="@color/nota_rojaNum" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nota1"
+                    style="@style/contenido_nota">
+
+                    <TextView
+                        style="@style/titulo_nota"
+                        android:text="alalalalalalala lalalalal lfflflflflfllflfl lflflf lflfq aldairrangel"
+                        />
+
+                    <TextView
+                        android:text="alalalalalalala lalalalal lfflflf
+                        lflfllflfl lflflf lflfq aldair rangel fld s aalfg"
+                        style="@style/txt_nota"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

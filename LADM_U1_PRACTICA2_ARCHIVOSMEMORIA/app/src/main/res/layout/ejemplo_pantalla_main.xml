@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".pantalla_listaDeNotas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="40dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/boton_agregarNota"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_agregar"
+                app:tint="@color/azul_ligero"
+                android:background="@drawable/efecto_ripple"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notas"
+                android:textStyle="bold"
+                android:textColor="@color/blanco_ligero"
+                android:textSize="40sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/boton_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icono_info"
+                app:tint="@color/azul_ligero"
+                android:background="@drawable/efecto_ripple"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- NOTA ROJA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="9dp"
+                android:background="@drawable/esq_redondeadas"
+                android:backgroundTint="@color/nota_roja"
+                android:layout_marginBottom="12dp">
+
+                <!-- INFO LATERAL -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blanco_ligero"
+                        android:background="@drawable/esq_redondas"
+                        android:backgroundTint="@color/nota_rojaNum"/>
+
+                    <ImageView
+                        android:id="@+id/boton_tipoMemoria1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icono_telefono"
+                        app:tint="@color/nota_rojaNum"
+                        android:background="@drawable/efecto_ripple" />
+                </LinearLayout>
+
+                <!-- CONTENIDO  -->
+                <LinearLayout
+                    android:id="@+id/nota1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingVertical="8dp">
+
+                    <!-- TITULO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflflflfllflfl lflflf lflfq aldairrangel"
+                        android:textAlignment="center"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:paddingBottom="6dp"/>
+
+                    <!-- RECORDATORIO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflf
+                        lflfllflfl lflflf lflfq aldair rangel fld s aalfg"
+                        android:textAlignment="textStart"
+                        android:textSize="21sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- NOTA AZUL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="9dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/esq_redondeadas"
+                android:backgroundTint="@color/nota_azul">
+
+                <!-- INFO LATERAL -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blanco_ligero"
+                        android:background="@drawable/esq_redondas"
+                        android:backgroundTint="@color/nota_azulNum"/>
+
+                    <ImageView
+                        android:id="@+id/boton_tipoMemoria2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icono_sd"
+                        app:tint="@color/nota_azulNum"
+                        android:background="@drawable/efecto_ripple" />
+                </LinearLayout>
+
+                <!-- CONTENIDO  -->
+                <LinearLayout
+                    android:id="@+id/nota2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingVertical="8dp">
+
+                    <!-- TITULO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflflflfllflfl lflflf lflfq aldairrangel"
+                        android:textAlignment="center"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:paddingBottom="6dp"/>
+
+                    <!-- RECORDATORIO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflf
+                        lflfllflfl lflflf lflfq aldair rangel fld s aalfg"
+                        android:textAlignment="textStart"
+                        android:textSize="21sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- NOTA VERDE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="9dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/esq_redondeadas"
+                android:backgroundTint="@color/nota_verde">
+
+                <!-- INFO LATERAL -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blanco_ligero"
+                        android:background="@drawable/esq_redondas"
+                        android:backgroundTint="@color/nota_verdeNum"/>
+
+                    <ImageView
+                        android:id="@+id/boton_tipoMemoria3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icono_telefono"
+                        app:tint="@color/nota_verdeNum"
+                        android:background="@drawable/efecto_ripple" />
+                </LinearLayout>
+
+                <!-- CONTENIDO  -->
+                <LinearLayout
+                    android:id="@+id/nota3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingVertical="8dp">
+
+                    <!-- TITULO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflflflfllflfl lflflf lflfq aldairrangel"
+                        android:textAlignment="center"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:paddingBottom="6dp"/>
+
+                    <!-- RECORDATORIO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflf
+                        lflfllflfl lflflf lflfq aldair rangel fld s aalfg"
+                        android:textAlignment="textStart"
+                        android:textSize="21sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- NOTA MORADA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="9dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/esq_redondeadas"
+                android:backgroundTint="@color/nota_morado">
+
+                <!-- INFO LATERAL -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/blanco_ligero"
+                        android:background="@drawable/esq_redondas"
+                        android:backgroundTint="@color/nota_moradoNum"/>
+
+                    <ImageView
+                        android:id="@+id/boton_tipoMemoria14"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/icono_sd"
+                        app:tint="@color/nota_moradoNum"
+                        android:background="@drawable/efecto_ripple" />
+                </LinearLayout>
+
+                <!-- CONTENIDO  -->
+                <LinearLayout
+                    android:id="@+id/nota14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingVertical="8dp">
+
+                    <!-- TITULO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflflflfllflfl lflflf lflfq aldairrangel"
+                        android:textAlignment="center"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:paddingBottom="6dp"/>
+
+                    <!-- RECORDATORIO  -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="alalalalalalala lalalalal lfflflf
+                        lflfllflfl lflflf lflfq aldair rangel fld s aalfg"
+                        android:textAlignment="textStart"
+                        android:textSize="21sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

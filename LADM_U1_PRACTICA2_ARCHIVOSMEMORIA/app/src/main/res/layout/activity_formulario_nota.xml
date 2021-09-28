@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".formulario_nota">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/boton_regresar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icono_regresar"
+            app:tint="@color/azul_ligero"
+            android:background="@drawable/efecto_ripple"
+            android:layout_marginBottom="25dp"/>
+        <EditText
+            android:id="@+id/cajaTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titulo de la Nota"
+            android:textColor="@color/blanco_ligero"
+            android:textColorHint="@color/azul_ligero"
+            android:background="@drawable/borde_redondeado_azul"
+            android:paddingVertical="8dp"
+            android:textSize="20sp"
+            android:paddingHorizontal="8dp"
+            android:backgroundTint="@color/azul_ligero_fondo"/>
+
+        <EditText
+            android:id="@+id/cajaRecordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:hint="Cual es tu recordatorio?"
+            android:textColor="@color/blanco_ligero"
+            android:textColorHint="@color/azul_ligero"
+            android:background="@drawable/borde_redondeado_azul"
+            android:paddingVertical="8dp"
+            android:textSize="20sp"
+            android:paddingHorizontal="8dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|left"
+            android:backgroundTint="@color/azul_ligero_fondo"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En donde quieres guardar tu nota?"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/azul_ligero"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/opcion_memoriaInterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/borde_redondeado_azul"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/icono_tel"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icono_telefono"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    app:tint="@color/azul_ligero"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memoria Interna"
+                    android:layout_below="@id/icono_tel"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blanco_ligero"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/opcion_memoriaExterna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/borde_redondeado_azul">
+
+                <ImageView
+                    android:id="@+id/icono_sd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icono_sd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    app:tint="@color/azul_ligero"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Memoria Externa"
+                    android:layout_below="@id/icono_sd"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/blanco_ligero"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!-- OPCIONES DE COLOR -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elige el color de la nota:"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/azul_ligero"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <FrameLayout
+                android:id="@+id/frame_rojo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nota_roja"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+                <!--
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icono_ok_circular"/>
+                -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_azul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nota_azul"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_verde"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nota_verde"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_morado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/nota_morado"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <!-- BOTONES DINAMICOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/layout_boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/verde_boton_formulario"
+                android:background="@drawable/efecto_ripple"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/img_boton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icono_guardar"
+                    app:tint="@color/nota_verdeNum" />
+
+                <TextView
+                    android:id="@+id/txt_boton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/nota_verdeNum"
+                    android:paddingHorizontal="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
